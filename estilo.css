@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+*{   
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background:white
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 117, 202);
+    height: 80px;
+    
+}
+
+header h1{
+   font-size: 60px;
+   color: white;
+   font-family: 'Kaushan Script', serif;
+   font-weight: normal; /* Peso da fonte */
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    font-family: "Nunito", sans-serif;
+    /* border: 1px solid red; */
+    
+    
+}
+
+.box-img{
+    display: flex;  
+    justify-content: center;
+    width: 35%;   
+    height: 400px;
+    
+    /* border: 1px solid blue;  */
+}
+
+.box-txt{
+    display: flex;  
+    flex-flow: row wrap;/* Cada elemento fica na sua linha*/
+    width: 35%;   
+    /* border: 1px solid green;  */
+}
+
+.box-txt span{
+    
+    color:gray ;
+    letter-spacing: 5px; /*Sepraçãpo das letras "Marque sua Consulta"*/
+    text-transform: uppercase;/*Maiúsculo*/
+}
+
+.box-txt h2{
+    
+    font-family:  "DM Sans", sans-serif;
+    font-size: 80px; /*Tamanho da fonte*/
+    font-weight: 800;/*Grossura*/
+    margin-top: 30px; /*Afastamento do topo*/
+    margin-bottom: 30px;/*Margin de baixo*/
+    line-height: 77px; /*Distanciamento entre as palavras*/
+    color: rgb(235, 47, 134);
+}
+
+.box-txt p{
+    margin-bottom: 30px;
+    color: gray;
+    font-family: "DM Sans", sans-serif;
+}
+
+.btn-hero{
+    background: rgb(235, 89, 155);
+    padding: 15px 25px;/*15 (cima,baixo),25(direita,esquerda)*/
+    text-decoration: none; /*Tira Sublinhado do link*/
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    border-radius: 15px; /*Borda Aredondada*/
+    transition: 0.5s all; /*0.5 seg para fazer a transição do :hover*/
+    margin-bottom: 30px; /* Afasta o botão da parte de baixo*/
+}
+
+.btn-hero:hover{
+    background: rgb(233, 11, 159);
+
+}
+
+.box-item{
+    width: 25%;
+    height: 350px;
+    background: #e8aae3;
+    margin: 5px; /* Distância entre cada especialidades*/
+    padding: 30px 20px; /* Espaçamento em cima e em baixo do texto de h3 e p (especialidades)*/
+    text-align: center;
+    border-radius: 10px;
+}
+  
+.especialidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;  
+    
+    font-family: "Nunito", sans-serif;
+    margin-left: 10%; /* Espaço na lateral*/
+    /* border: 1px solid red; */
+}
+
+.m-top{/*Topo da Margem*/
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 170px;
+    margin-left:  auto;
+    margin-right:  auto;
+    
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background: rgb(255, 117, 202);
+    height: 150px;
+    color: white;
+    font-size: 22px;
+    
+}
+
+.whats{
+    position: fixed; /*Deixa fixo o whatazap mas é preciso direcionar onde ficará fixo*/
+    right: 20px; /* 10 px à direita*/
+    bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    header h1{
+        font-size: 45px;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .box-txt{
+        flex-flow: column wrap;
+        width: 100%;
+        padding: 40px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-txt h2{
+        font-size: 45px;        
+    }
+
+
+    .box-txt p{
+        text-align: center;
+    }
+
+    .box-img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .box-item{
+        width: 90%;
+    }
+
+    footer{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .responsiva{
+    max-width: 100%;
+    }
+}
